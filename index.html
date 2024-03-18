@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio static</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/regular.min.css"
+            integrity="sha512-TzeemgHmrSO404wTLeBd76DmPp5TjWY/f2SyZC6/3LsutDYMVYfOx2uh894kr0j9UM6x39LFHKTeLn99iz378A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./variables.css" />
+        <link rel="stylesheet" href="./main-style.css" />
+        <link rel="stylesheet" href="./animations.css" />
+        <link rel="stylesheet" href="./media-queries.css" />
+
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <header class="header grid">
+            <a href href="#" class="header__homelogo"
+                ><i class="fa-solid fa-house" id="homeicon"></i>
+                <span id="homename">Rachid</span>
+                <i class="fa-solid fa-bars" id="menuicon"></i>
+            </a>
+            <nav class="navbar">
+                <ul class="navbar__list flexrow">
+                    <li class="navbar__item">
+                        <a href="#home" active>About</a>
+                    </li>
+                    <li class="navbar__item"><a href="#skills">Skills</a></li>
+                    <li class="navbar__item">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#education">Education</a>
+                    </li>
+                    <li class="navbar__item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="section home grid" id="home">
+                <div class="home__cta animate-ping-once">
+                    <button id="download-cv-button ">Download my C.V.</button>
+                </div>
+                <div class="home__avatar">
+                    <img
+                        src="./assets/avatar-transparent.png"
+                        alt="myavatar"
+                        id="avatar"
+                        width="350"
+                        height="350"
+                    />
+                </div>
+                <div class="home__content flexcol">
+                    <h1 class="home__content__heading no-wrap">
+                        Hello there ! It's <span id="myName">Rachid</span>
+                        <br />
+                        <div class="animated-text">
+                            I'm <span id="myJobs"> </span>
+                        </div>
+                    </h1>
+
+                    <p class="home__content__desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Quae at voluptatem assumenda distinctio odio!
+                        Omnis, blanditiis! Explicabo ipsum temporibus suscipit,
+                        distinctio corrupti aut? Maxime facere pariatur
+                        doloremque nostrum? Accusamus, reprehenderit.
+                    </p>
+                </div>
+            </section>
+            <section class="section skills grid" id="skills">
+                <h2 class="section__heading animate-bounce">Skills</h2>
+
+                <div class="skills__container">
+                    <div class="skills__container__element">
+                        <img
+                            src="./assets/typescript-svgrepo-com.svg"
+                            alt="TypeScriptImage"
+                            width="100"
+                            height="100"
+                        />
+                        <p>TypeScript</p>
+                    </div>
+
+                    <div class="skills__container__element">
+                        <img
+                            src="./assets/react-svgrepo-com.svg"
+                            alt="ReactImage"
+                            width="100"
+                            height="100"
+                        />
+                        <p>React</p>
+                    </div>
+
+                    <div class="skills__container__element">
+                        <img
+                            src="./assets/node-svgrepo-com.svg"
+                            alt="NodeImage"
+                            width="100"
+                            height="100"
+                        />
+                        <p>Node</p>
+                    </div>
+
+                    <div class="skills__container__element">
+                        <img
+                            src="./assets/expressjs-icon.svg"
+                            alt="ExpressImage"
+                            width="100"
+                            height="100"
+                        />
+                        <p>Express</p>
+                    </div>
+
+                    <div class="skills__container__element">
+                        <img
+                            src="./assets/next-js-svgrepo-com.svg"
+                            alt="NextImage"
+                            width="100"
+                            height="100"
+                        />
+                        <p>Next</p>
+                    </div>
+
+                    <div class="skills__container__element">
+                        <img
+                            src="./assets/tailwind-svgrepo-com.svg"
+                            alt="TailWindImage"
+                            width="100"
+                            height="100"
+                        />
+                        <p>TailWind</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section services grid" id="services">
+                <h2 class="section__heading animate-bounce">Services</h2>
+                <div class="services__container">
+                    <div class="services__card__bx" style="--clr: #89ec5b">
+                        <div class="services__card__data">
+                            <div class="services__card__icon">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <div class="services__card__content">
+                                <h3>Embedded solutions design</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry.
+                                </p>
+                                <a href="#" class="animate-ping">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card__bx" style="--clr: #eb5ae5">
+                        <div class="services__card__data">
+                            <div class="services__card__icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="services__card__content">
+                                <h3>Develpoment Web</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry.
+                                </p>
+                                <a href="#" class="animate-ping">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card__bx" style="--clr: #5b98eb">
+                        <div class="services__card__data">
+                            <div class="services__card__icon">
+                                <i class="fa-brands fa-searchengin"></i>
+                            </div>
+                            <div class="services__card__content">
+                                <h3>SEO</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry.
+                                </p>
+                                <a href="#" class="animate-ping">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section projects grid" id="projects">
+                <h2 class="section__heading animate-bounce">Projects</h2>
+                <div class="projects__container">
+                    <div class="projects__card">
+                        <img
+                            src="./assets/projetA.jpg"
+                            alt="Animated Card Hover Effect Html & CSS"
+                        />
+                        <div class="projects__card__intro">
+                            <h1 class="projects__card__intro__title">
+                                KriticArt Web App
+                            </h1>
+                            <p class="projects__card__intro__text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Blanditiis rerum laudantium,
+                                ad deserunt quibusdam corrupti aut, recusandae
+                                alias dolores ex expedita quaerat a in et.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projects__card">
+                        <img
+                            src="./assets/projetB.jpg"
+                            alt="Animated Card Hover Effect Html & CSS"
+                        />
+                        <div class="projects__card__intro">
+                            <h1 class="projects__card__intro__title">
+                                HMJtechnics WebSite
+                            </h1>
+                            <p class="projects__card__intro__text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Blanditiis rerum laudantium,
+                                ad deserunt quibusdam corrupti aut, recusandae
+                                alias dolores ex expedita quaerat a in et.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projects__card">
+                        <img
+                            src="./assets/projetC.jpg"
+                            alt="Animated Card Hover Effect Html & CSS"
+                        />
+                        <div class="projects__card__intro">
+                            <h1 class="projects__card__intro__title">Blog</h1>
+                            <p class="projects__card__intro__text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Blanditiis rerum laudantium,
+                                ad deserunt quibusdam corrupti aut, recusandae
+                                alias dolores ex expedita quaerat a in et.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section education grid" id="education">
+                <h2 class="section__heading animate-bounce">Education</h2>
+                <div class="education__container">
+                    <div class="education__block left__block">
+                        <div class="education__circle__left">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="education__block__content">
+                            <div class="education__block__content__heading">
+                                <strong
+                                    >FOrmation JavaScript bruxelles
+                                    formation</strong
+                                >
+                                <small>2021-2023</small>
+                            </div>
+                            <div class="education__block__content__text">
+                                Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore
+                            </div>
+                        </div>
+                        <div class="education__triangle__left"></div>
+                    </div>
+                    <div class="education__block right__block">
+                        <div class="education__circle__right">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="education__block__content">
+                            <div class="education__block__content__heading">
+                                <strong
+                                    >Formation bruxelles formation .NET avec
+                                    stage de 2 mois</strong
+                                >
+                                <small>2015-2016</small>
+                            </div>
+                            <div class="education__block__content__text">
+                                Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore
+                            </div>
+                        </div>
+                        <div class="education__triangle__right"></div>
+                    </div>
+                    <div class="education__block left__block">
+                        <div class="education__circle__left">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                        </div>
+                        <div class="education__block__content">
+                            <div class="education__block__content__heading">
+                                <strong
+                                    >Stage de fin d'étude 6 mois et Diplome
+                                    Electronicien option systéme
+                                    embarqué</strong
+                                >
+                                <small>2012-2013</small>
+                            </div>
+                            <div class="education__block__content__text">
+                                Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore
+                            </div>
+                        </div>
+                        <div class="education__triangle__left"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section contact grid" id="contact">
+                <h2 class="section__heading animate-bounce">Contact</h2>
+                <form action="#" class="contact__form">
+                    <div class="contact__form_namephone">
+                        <label for="name">Name </label
+                        ><input
+                            type="text"
+                            name="name"
+                            id=""
+                            placeholder="Enter your name"
+                            required
+                        />
+                        <label for="phone">Phone number </label
+                        ><input
+                            type="tel"
+                            name="phone"
+                            id=""
+                            placeholder="Enter your phone"
+                        />
+                    </div>
+                    <div class="contact__form_mailsubject">
+                        <label for="email" aria-required="true">Email </label
+                        ><input
+                            type="email"
+                            name="email"
+                            id=""
+                            placeholder="Enter your email"
+                            required
+                        />
+                        <label for="subject">Email Subject </label
+                        ><input
+                            type="text"
+                            name="subject"
+                            id=""
+                            placeholder="subject"
+                        />
+                    </div>
+                    <label for="message">Your Message </label>
+                    <textarea
+                        name="message"
+                        id=""
+                        cols="30"
+                        rows="10"
+                        placeholder="Enter your message here ..."
+                    ></textarea>
+                    <button
+                        type="submit"
+                        class="contact__form__btn"
+                        id="submitButton"
+                    >
+                        SEND MESSAGE
+                    </button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

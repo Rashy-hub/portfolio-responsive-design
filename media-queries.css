@@ -1,0 +1,220 @@
+/*Media Queries Responsive Design */
+
+@media screen and (min-width: 674px) and (max-width: 1200px) {
+    /* Styles pour les écrans de taille moyenne */
+    .header {
+        grid-template-areas: 'lg lg . nv nv nv nv nv . . . .';
+        padding: 1rem;
+    }
+    .navbar {
+        justify-self: start;
+    }
+    .navbar__list {
+        gap: 1rem;
+    }
+    .home {
+        grid-template-areas:
+            '. . . . . . . . . . . .'
+            '. . . cta cta cta cta cta cta . . .'
+            '. . ava ava ava ava ava ava ava ava . .'
+            '. . ava ava ava ava ava ava ava ava . .'
+            '. . ava ava ava ava ava ava ava ava . .'
+            '. . ava ava ava ava ava ava ava ava . .'
+            '. . ava ava ava ava ava ava ava ava . .'
+            '. . ctn ctn ctn ctn ctn ctn ctn ctn . .'
+            '. . ctn ctn ctn ctn ctn ctn ctn ctn. .'
+            '. . ctn ctn ctn ctn ctn ctn ctn ctn . .'
+            '. . ctn ctn ctn ctn ctn ctn ctn ctn . .'
+            '. . ctn ctn ctn ctn ctn ctn ctn ctn . .';
+        /*   '. . . . . . . . . . . .'
+            '. . . cta cta cta cta cta . . . .'
+            '. . . ava ava ava ava ava . . . .'
+            '. . . ava ava ava ava ava . . . .'
+            '. . . ava ava ava ava ava . . . .'
+            '. . . ava ava ava ava ava . . . .'
+            '. . . ava ava ava ava ava . . . .'
+            '. . . ctn ctn ctn ctn ctn . . . .'
+            '. . . ctn ctn ctn ctn ctn . . . .'
+            '. . . ctn ctn ctn ctn ctn . . . .'
+            '. . . ctn ctn ctn ctn ctn . . . .'
+            '. . . ctn ctn ctn ctn ctn . . . .'; */
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .home__cta {
+        align-self: flex-end;
+        justify-self: center;
+        padding: 0;
+        margin: 0;
+        transform: translateX(50px);
+        transform: translateY(50px);
+    }
+
+    .home__avatar {
+        justify-self: center;
+        align-self: flex-end;
+    }
+    #avatar {
+        width: 350px;
+        height: 350px;
+    }
+    .home__content {
+        justify-self: center;
+        align-self: flex-start;
+    }
+    .home__content__heading {
+        font-size: 40px;
+        min-width: 280px;
+    }
+
+    .home__content__desc {
+        font-size: 24px;
+    }
+
+    /*Skills media queries*/
+
+    .skills {
+        grid-template-areas:
+            '. . . . . . . . . . . .'
+            '. . . hd hd hd hd hd hd . . .'
+            '. . . . . . . . . . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . . . . . . . . . .';
+        align-items: center;
+
+        padding: 1rem;
+    }
+    .skills__container {
+        grid-area: sk;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem;
+        justify-content: space-between;
+        align-self: center;
+    }
+    .skills__container__element {
+        flex: 1 1 auto;
+        width: 33.33%;
+        margin: 1rem;
+    }
+
+    .skills__container__element img {
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 673px) {
+    /* Styles pour les écrans de taille moyenne */
+    .header {
+        grid-template-areas: 'lg lg lg lg lg lg lg lg lg lg lg lg';
+        padding: 1rem;
+        width: 100vw;
+        height: 9vh;
+    }
+    #homename {
+        display: none;
+    }
+    #menuicon {
+        display: inline;
+        color: #2ecc71;
+    }
+
+    .navbar {
+        display: none;
+    }
+    .header__homelogo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .home {
+        grid-template-areas:
+            '. . . . . . . . . . . .'
+            '. . . cta cta cta cta cta cta . . .'
+            '. . ava ava ava ava ava ava ava ava . .'
+            '. . ava ava ava ava ava ava ava ava . .'
+            '. . ava ava ava ava ava ava ava ava . .'
+            '. . ctn ctn ctn ctn ctn ctn ctn ctn . .'
+            '. . ctn ctn ctn ctn ctn ctn ctn ctn . .'
+            '. . ctn ctn ctn ctn ctn ctn ctn ctn . .'
+            '. . ctn ctn ctn ctn ctn ctn ctn ctn. .'
+            '. . ctn ctn ctn ctn ctn ctn ctn ctn . .'
+            '. . ctn ctn ctn ctn ctn ctn ctn ctn . .'
+            '. . ctn ctn ctn ctn ctn ctn ctn ctn . .';
+        padding: 0.8rem;
+        gap: 2rem;
+    }
+
+    .home__cta {
+        align-self: flex-start;
+        transform: translateX(55px);
+        transform: translateY(40px);
+        font-size: medium;
+    }
+
+    .home__avatar {
+        justify-self: center;
+        align-self: flex-start;
+    }
+    #avatar {
+        width: 300px;
+        height: 300px;
+    }
+    .home__content {
+        justify-self: center;
+        align-self: flex-start;
+    }
+    .home__content__heading {
+        font-size: 32px;
+    }
+    .home__content__desc {
+        font-size: 24px;
+    }
+
+    /*Skills Section*/
+    .skills {
+        grid-template-areas:
+            '. . . . . . . . . . . .'
+            '. . . hd hd hd hd hd hd . . .'
+            '. . . . . . . . . . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . sk sk sk sk sk sk . . .'
+            '. . . . . . . . . . . .';
+        align-items: center;
+
+        padding: 0.6rem;
+    }
+
+    .skills__container {
+        grid-area: sk;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0.6rem;
+        justify-content: space-between;
+        align-self: center;
+    }
+    .skills__container__element {
+        margin: 0.6rem;
+    }
+    .skills__container__element img {
+        height: 200px;
+        width: 300px;
+    }
+}
