@@ -1,31 +1,46 @@
-/* Déclaration des variables */
+/* Déclaration des variables global*/
 :root {
-    --primary-color: #ffeb7a; /* Couleur principale - bleu */
-    --secondary-color: #eec336; /* Couleur secondaire - vert */
-    --text-color: #333; /* Couleur du texte principal */
-    --heading-color: #1e272e; /* Couleur des titres */
-    --button-bg-color: var(--primary-color); /* Couleur de fond des boutons */
-    --button-text-color: #fff; /* Couleur du texte des boutons */
-    --button-hover-bg-color: #2980b9; /* Couleur de fond des boutons au survol */
-    --button-hover-text-color: #fff; /* Couleur du texte des boutons au survol */
-    --nav-bg-color: #fff; /* Couleur de fond de la barre de navigation */
-    --nav-text-color: #fff;
-    --dark-color: #000;
-    /* Couleur du texte de la barre de navigation */
-    --nav-hover-text-color: var(
-        --primary-color
-    ); /* Couleur du texte au survol dans la barre de navigation */
-    --section-bg-color: #ecf0f1; /* Couleur de fond des sections */
-
-    /* Gradients */
-    --gradient-primary: linear-gradient(
-        to right,
-        var(--primary-color),
-        var(--secondary-color)
-    );
+    --fs-body: 32px;
+    --fs-header: 16px;
+    --ff-body: 'Montserrat', sans-serif;
+    --ff-heading: 'Roboto Slab', serif;
+    --primary-color: #ffeb7a;
+    --button-primary-color: var(--primary-color);
+    --secondary-color: #eec336;
+    --button-secondary-color: var(--secondary-color);
     --gradient-button: linear-gradient(
         to right,
-        var(--primary-color),
-        var(--secondary-color)
+        var(--button-primary-color),
+        var(--button-secondary-color)
     );
+    --text-color: #333;
+    --heading-color: #242e1e;
+    --nav-text-color: #fff;
+    --nav-hover-text-color: var(--button-primary-color);
+    --header-bg-gradient: linear-gradient(
+        141deg,
+        #145f9dcb 0,
+        #145f9dc6 21%,
+        #06091ac3 52%
+    );
+    --header-bg-color: var(--header-bg-gradient); /* rgba(27, 36, 47, 0.99);*/
+    --header-bg-secondary-color: #2ecc71;
+    --section-primary-background: linear-gradient(
+            to right,
+            rgba(245, 245, 245, 0.8),
+            rgba(245, 245, 245, 0.8)
+        ),
+        url('./assets/common-bg.svg');
+
+    --section-secondary-background: linear-gradient(
+            to right,
+            rgba(245, 245, 245, 0.8),
+            rgba(245, 245, 245, 0.8)
+        ),
+        url('./assets/subtle-prism.svg');
+
+    --breakpoint-s: 640px;
+    --breakpoint-m: 960px;
+    --breakpoint-l: 1200px;
+    --breakpoint-xl: 1600px;
 }

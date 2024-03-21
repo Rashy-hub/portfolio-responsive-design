@@ -27,14 +27,14 @@
     </head>
     <body>
         <header class="header grid">
-            <a href href="#" class="header__homelogo"
-                ><i class="fa-solid fa-house" id="homeicon"></i>
-                <span id="homename">Rachid</span>
-                <i class="fa-solid fa-bars" id="menuicon"></i>
+            <a href href="#" class="header__logo-home"
+                ><i class="fa-solid fa-house" id="logo-home"></i>
+                <span id="logo-home-name">Rachid</span>
+                <i class="fa-solid fa-bars" id="logo-home-hamburger"></i>
             </a>
             <nav class="navbar">
                 <ul class="navbar__list flexrow">
-                    <li class="navbar__item">
+                    <li class="navbar__item navbar__item--active">
                         <a href="#home" active>About</a>
                     </li>
                     <li class="navbar__item"><a href="#skills">Skills</a></li>
@@ -54,27 +54,31 @@
         <main class="main">
             <section class="section home grid" id="home">
                 <div class="home__cta animate-ping-once">
-                    <button id="download-cv-button ">Download my C.V.</button>
+                    <button id="download-cv-button " class="home__cta--button">
+                        Download my C.V.
+                    </button>
                 </div>
                 <div class="home__avatar">
                     <img
                         src="./assets/avatar-transparent.png"
                         alt="myavatar"
-                        id="avatar"
+                        class="home__avatar--image"
                         width="350"
                         height="350"
                     />
                 </div>
                 <div class="home__content flexcol">
-                    <h1 class="home__content__heading no-wrap">
-                        Hello there ! It's <span id="myName">Rachid</span>
+                    <h1 class="home__content--heading no-wrap">
+                        Hello there ! It's
+                        <span id="myName">Rachid</span>
                         <br />
-                        <div class="animated-text">
-                            I'm <span id="myJobs"> </span>
+                        <div class="home__content--animated-text">
+                            I'm
+                            <span id="myJobs"> </span>
                         </div>
                     </h1>
 
-                    <p class="home__content__desc">
+                    <p class="home__content--desc">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Quae at voluptatem assumenda distinctio odio!
                         Omnis, blanditiis! Explicabo ipsum temporibus suscipit,
@@ -86,8 +90,8 @@
             <section class="section skills grid" id="skills">
                 <h2 class="section__heading animate-bounce">Skills</h2>
 
-                <div class="skills__container">
-                    <div class="skills__container__element">
+                <div class="skills__container flexrow">
+                    <div class="skills__container__element flexcol">
                         <img
                             src="./assets/typescript-svgrepo-com.svg"
                             alt="TypeScriptImage"
@@ -97,7 +101,7 @@
                         <p>TypeScript</p>
                     </div>
 
-                    <div class="skills__container__element">
+                    <div class="skills__container__element flexcol">
                         <img
                             src="./assets/react-svgrepo-com.svg"
                             alt="ReactImage"
@@ -107,7 +111,7 @@
                         <p>React</p>
                     </div>
 
-                    <div class="skills__container__element">
+                    <div class="skills__container__element flexcol">
                         <img
                             src="./assets/node-svgrepo-com.svg"
                             alt="NodeImage"
@@ -117,7 +121,7 @@
                         <p>Node</p>
                     </div>
 
-                    <div class="skills__container__element">
+                    <div class="skills__container__element flexcol">
                         <img
                             src="./assets/expressjs-icon.svg"
                             alt="ExpressImage"
@@ -127,7 +131,7 @@
                         <p>Express</p>
                     </div>
 
-                    <div class="skills__container__element">
+                    <div class="skills__container__element flexcol">
                         <img
                             src="./assets/next-js-svgrepo-com.svg"
                             alt="NextImage"
@@ -137,7 +141,7 @@
                         <p>Next</p>
                     </div>
 
-                    <div class="skills__container__element">
+                    <div class="skills__container__element flexcol">
                         <img
                             src="./assets/tailwind-svgrepo-com.svg"
                             alt="TailWindImage"
