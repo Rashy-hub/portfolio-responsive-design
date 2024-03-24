@@ -73,6 +73,9 @@ h5 {
 .header {
     filter: drop-shadow(10px);
     background: var(--header-bg-color);
+    /*nice blur effect behind header */
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     position: fixed;
     top: 0;
     width: 100vw;
