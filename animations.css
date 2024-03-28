@@ -147,6 +147,33 @@
     }
 }
 
+@keyframes glowing-light {
+    0% {
+        border-color: red; /* Initial border color */
+        box-shadow: 0 0 20px red; /* Initial shadow color */
+    }
+    50% {
+        border-color: rgb(200, 255, 0); /* Midway border color */
+        box-shadow: 0 0 20px rgb(200, 255, 0); /* Midway shadow color */
+    }
+    100% {
+        border-color: red; /* Final border color */
+        box-shadow: 0 0 20px red; /* Final shadow color */
+    }
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /* Animations prédéfinies class*/
 
 .animate-spin {

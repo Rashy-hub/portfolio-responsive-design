@@ -40,6 +40,14 @@ function toggleActiveNavElements() {
     })
 }
 
-animateNodeListOnIntersection('.skills__container__element:nth-child(n)')
-animateNodeListOnIntersection('.services__card__bx:nth-child(n)')
+const myform = document.querySelector('.contact__form')
+animateNodeListOnIntersection('.skills__card:nth-child(n)')
+animateNodeListOnIntersection('.services__card:nth-child(n)')
+animateNodeListOnIntersection('.projects__card:nth-child(n)')
 toggleActiveNavElements()
+
+myform.addEventListener('submit', function (event) {
+    event.preventDefault()
+    alert('Le formulaire a été soumis avec succès (simulé)')
+    myform.reset()
+})

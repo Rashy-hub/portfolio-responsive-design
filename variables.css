@@ -1,9 +1,15 @@
 /* Déclaration des variables global*/
 :root {
-    --fs-body: 32px;
+    /*Font general variabless*/
+
+    --fs-body: 24px;
+    --fs-heading: 48px;
     --fs-header: 16px;
     --ff-body: 'Montserrat', sans-serif;
     --ff-heading: 'Roboto Slab', serif;
+
+    /*Color general variables*/
+
     --primary-color: #ffeb7a;
     --button-primary-color: var(--primary-color);
     --secondary-color: #eec336;
@@ -15,6 +21,9 @@
     );
     --text-color: #333;
     --heading-color: #242e1e;
+
+    /*Header color variables*/
+
     --nav-text-color: #fff;
     --nav-hover-text-color: var(--button-primary-color);
     --header-bg-gradient: linear-gradient(
@@ -25,6 +34,9 @@
     );
     --header-bg-color: var(--header-bg-gradient); /* rgba(27, 36, 47, 0.99);*/
     --header-bg-secondary-color: #2ecc71;
+
+    /*Section color variables */
+
     --section-primary-background: linear-gradient(
             to right,
             rgba(245, 245, 245, 0.8),
@@ -39,8 +51,35 @@
         ),
         url('./assets/subtle-prism.svg');
 
+    /*Nav Bar styles var*/
+    --nav-gap: 2rem;
+    --ff-nav: 'Anta';
+    /*Section fonts*/
+    --ff-section: 'Anta';
+    --fs-section: 1.5em;
+    --fs-section-heading: 8rem;
+    --box-shadow-section-heading: 2px 2px 4px #567fd7;
+
+    /*Section styles variables */
+    --section-heading-margin-bottom: 5rem;
+    /*Home section variables*/
+
+    --width-avatar: 500px;
+    --height-avatar: 500px;
+    --margin-top-content-desc: 2rem;
+    /*Skills section variables*/
+
+    /*Projects section variables */
+
+    --height-project-card: 500px;
+    --width-project-card: 350px;
+
+    /*Education section variables*/
+
+    /*Media queries breakpoints */
+
     --breakpoint-s: 640px;
     --breakpoint-m: 960px;
     --breakpoint-l: 1200px;
-    --breakpoint-xl: 1600px;
+    --breakpoint-xl: 1800px;
 }

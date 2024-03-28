@@ -28,9 +28,8 @@
     <body>
         <header class="header grid">
             <a href href="#" class="header__logo-home"
-                ><i class="fa-solid fa-house" id="logo-home"></i>
+                ><i class="fa-solid fa-house fa-lg" id="logo-home"></i>
                 <span id="logo-home-name">Rachid</span>
-                <i class="fa-solid fa-bars" id="logo-home-hamburger"></i>
             </a>
             <nav class="navbar">
                 <ul class="navbar__list flexrow">
@@ -50,6 +49,9 @@
                     <li class="navbar__item"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="hamburger-menu">
+                <i class="fa-solid fa-bars fa-lg" id="logo-home-hamburger"></i>
+            </div>
         </header>
         <main class="main">
             <section class="section home grid" id="home">
@@ -91,7 +93,7 @@
                 <h2 class="section__heading animate-bounce">Skills</h2>
 
                 <div class="skills__container flexrow">
-                    <div class="skills__container__element flexcol">
+                    <div class="skills__card flexcol">
                         <img
                             src="./assets/typescript-svgrepo-com.svg"
                             alt="TypeScriptImage"
@@ -101,7 +103,7 @@
                         <p>TypeScript</p>
                     </div>
 
-                    <div class="skills__container__element flexcol">
+                    <div class="skills__card flexcol">
                         <img
                             src="./assets/react-svgrepo-com.svg"
                             alt="ReactImage"
@@ -111,7 +113,7 @@
                         <p>React</p>
                     </div>
 
-                    <div class="skills__container__element flexcol">
+                    <div class="skills__card flexcol">
                         <img
                             src="./assets/node-svgrepo-com.svg"
                             alt="NodeImage"
@@ -121,7 +123,7 @@
                         <p>Node</p>
                     </div>
 
-                    <div class="skills__container__element flexcol">
+                    <div class="skills__card flexcol">
                         <img
                             src="./assets/expressjs-icon.svg"
                             alt="ExpressImage"
@@ -131,7 +133,7 @@
                         <p>Express</p>
                     </div>
 
-                    <div class="skills__container__element flexcol">
+                    <div class="skills__card flexcol">
                         <img
                             src="./assets/next-js-svgrepo-com.svg"
                             alt="NextImage"
@@ -141,7 +143,7 @@
                         <p>Next</p>
                     </div>
 
-                    <div class="skills__container__element flexcol">
+                    <div class="skills__card flexcol">
                         <img
                             src="./assets/tailwind-svgrepo-com.svg"
                             alt="TailWindImage"
@@ -154,13 +156,13 @@
             </section>
             <section class="section services grid" id="services">
                 <h2 class="section__heading animate-bounce">Services</h2>
-                <div class="services__container">
-                    <div class="services__card__bx" style="--clr: #89ec5b">
-                        <div class="services__card__data">
-                            <div class="services__card__icon">
+                <div class="services__container flexrow">
+                    <div class="services__card">
+                        <div class="services__card-data">
+                            <div class="services__card-icon">
                                 <i class="fa-solid fa-microchip"></i>
                             </div>
-                            <div class="services__card__content">
+                            <div class="services__card-content">
                                 <h3>Embedded solutions design</h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the
@@ -170,12 +172,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="services__card__bx" style="--clr: #eb5ae5">
-                        <div class="services__card__data">
-                            <div class="services__card__icon">
+                    <div class="services__card">
+                        <div class="services__card-data">
+                            <div class="services__card-icon">
                                 <i class="fa-solid fa-code"></i>
                             </div>
-                            <div class="services__card__content">
+                            <div class="services__card-content">
                                 <h3>Develpoment Web</h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the
@@ -185,12 +187,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="services__card__bx" style="--clr: #5b98eb">
-                        <div class="services__card__data">
-                            <div class="services__card__icon">
+                    <div class="services__card">
+                        <div class="services__card-data">
+                            <div class="services__card-icon">
                                 <i class="fa-brands fa-searchengin"></i>
                             </div>
-                            <div class="services__card__content">
+                            <div class="services__card-content">
                                 <h3>SEO</h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the
@@ -210,11 +212,11 @@
                             src="./assets/projetA.jpg"
                             alt="Animated Card Hover Effect Html & CSS"
                         />
-                        <div class="projects__card__intro">
-                            <h1 class="projects__card__intro__title">
+                        <div class="projects__card-intro">
+                            <h1 class="projects__card-intro--title">
                                 KriticArt Web App
                             </h1>
-                            <p class="projects__card__intro__text">
+                            <p class="projects__card-intro--text">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Blanditiis rerum laudantium,
                                 ad deserunt quibusdam corrupti aut, recusandae
@@ -228,11 +230,11 @@
                             src="./assets/projetB.jpg"
                             alt="Animated Card Hover Effect Html & CSS"
                         />
-                        <div class="projects__card__intro">
-                            <h1 class="projects__card__intro__title">
+                        <div class="projects__card-intro">
+                            <h1 class="projects__card-intro--title">
                                 HMJtechnics WebSite
                             </h1>
-                            <p class="projects__card__intro__text">
+                            <p class="projects__card-intro--text">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Blanditiis rerum laudantium,
                                 ad deserunt quibusdam corrupti aut, recusandae
@@ -246,9 +248,9 @@
                             src="./assets/projetC.jpg"
                             alt="Animated Card Hover Effect Html & CSS"
                         />
-                        <div class="projects__card__intro">
-                            <h1 class="projects__card__intro__title">Blog</h1>
-                            <p class="projects__card__intro__text">
+                        <div class="projects__card-intro">
+                            <h1 class="projects__card-intro--title">Blog</h1>
+                            <p class="projects__card-intro--text">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Blanditiis rerum laudantium,
                                 ad deserunt quibusdam corrupti aut, recusandae
@@ -260,82 +262,87 @@
             </section>
             <section class="section education grid" id="education">
                 <h2 class="section__heading animate-bounce">Education</h2>
-                <div class="education__container">
-                    <div class="education__block left__block">
-                        <div class="education__circle__left">
+                <div class="education__container flexcol">
+                    <div class="education__block education__block--left">
+                        <div class="education__circle education__circle--left">
                             <i class="fa fa-book" aria-hidden="true"></i>
                         </div>
-
-                        <div class="education__block__content">
-                            <div class="education__block__content__heading">
+                        <div class="education__content flexcol">
+                            <div class="education__content-heading">
                                 <strong
-                                    >FOrmation JavaScript bruxelles
-                                    formation</strong
+                                    >Formation JavaScript Bruxelles
+                                    Formation</strong
                                 >
                                 <small>2021-2023</small>
                             </div>
-                            <div class="education__block__content__text">
+                            <div class="education__content-text">
                                 Lorem ipsum dolor sit amet, consetetur
                                 sadipscing elitr, sed diam nonumy eirmod tempor
                                 invidunt ut labore et dolore
                             </div>
                         </div>
-                        <div class="education__triangle__left"></div>
+                        <div
+                            class="education__triangle education__triangle--left"
+                        ></div>
                     </div>
-                    <div class="education__block right__block">
-                        <div class="education__circle__right">
+                    <div class="education__block education__block--right">
+                        <div class="education__circle education__circle--right">
                             <i class="fa fa-book" aria-hidden="true"></i>
                         </div>
-
-                        <div class="education__block__content">
-                            <div class="education__block__content__heading">
+                        <div class="education__content flexcol">
+                            <div class="education__content-heading">
                                 <strong
-                                    >Formation bruxelles formation .NET avec
+                                    >Formation Bruxelles Formation .NET avec
                                     stage de 2 mois</strong
                                 >
                                 <small>2015-2016</small>
                             </div>
-                            <div class="education__block__content__text">
+                            <div class="education__content-text">
                                 Lorem ipsum dolor sit amet, consetetur
                                 sadipscing elitr, sed diam nonumy eirmod tempor
                                 invidunt ut labore et dolore
                             </div>
                         </div>
-                        <div class="education__triangle__right"></div>
+                        <div
+                            class="education__triangle education__triangle--right"
+                        ></div>
                     </div>
-                    <div class="education__block left__block">
-                        <div class="education__circle__left">
+                    <div class="education__block education__block--left">
+                        <div class="education__circle education__circle--left">
                             <i class="fa fa-book" aria-hidden="true"></i>
                         </div>
-                        <div class="education__block__content">
-                            <div class="education__block__content__heading">
+                        <div class="education__content flexcol">
+                            <div class="education__content-heading">
                                 <strong
-                                    >Stage de fin d'étude 6 mois et Diplome
-                                    Electronicien option systéme
+                                    >Stage de fin d'étude 6 mois et Diplôme
+                                    Electronicien option système
                                     embarqué</strong
                                 >
                                 <small>2012-2013</small>
                             </div>
-                            <div class="education__block__content__text">
+                            <div class="education__content-text">
                                 Lorem ipsum dolor sit amet, consetetur
                                 sadipscing elitr, sed diam nonumy eirmod tempor
                                 invidunt ut labore et dolore
                             </div>
                         </div>
-                        <div class="education__triangle__left"></div>
+                        <div
+                            class="education__triangle education__triangle--left"
+                        ></div>
                     </div>
                 </div>
             </section>
+
             <section class="section contact grid" id="contact">
                 <h2 class="section__heading animate-bounce">Contact</h2>
-                <form action="#" class="contact__form">
-                    <div class="contact__form_namephone">
+                <form action="" class="contact__form">
+                    <div class="contact__form-namephone">
                         <label for="name">Name </label
                         ><input
                             type="text"
                             name="name"
                             id=""
-                            placeholder="Enter your name"
+                            placeholder="Your name"
                             required
                         />
                         <label for="phone">Phone number </label
@@ -343,16 +350,16 @@
                             type="tel"
                             name="phone"
                             id=""
-                            placeholder="Enter your phone"
+                            placeholder="Your phone"
                         />
                     </div>
-                    <div class="contact__form_mailsubject">
+                    <div class="contact__form-mailsubject">
                         <label for="email" aria-required="true">Email </label
                         ><input
                             type="email"
                             name="email"
                             id=""
-                            placeholder="Enter your email"
+                            placeholder="Your email"
                             required
                         />
                         <label for="subject">Email Subject </label
@@ -360,7 +367,7 @@
                             type="text"
                             name="subject"
                             id=""
-                            placeholder="subject"
+                            placeholder="Subject"
                         />
                     </div>
                     <label for="message">Your Message </label>
@@ -369,11 +376,11 @@
                         id=""
                         cols="30"
                         rows="10"
-                        placeholder="Enter your message here ..."
+                        placeholder=" Your message here ..."
                     ></textarea>
                     <button
                         type="submit"
-                        class="contact__form__btn"
+                        class="contact__form-btn"
                         id="submitButton"
                     >
                         SEND MESSAGE
