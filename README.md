@@ -16,3 +16,9 @@
 -   Deployed on GitHub Pages!
 
 ** Note ** : The content is currently filled with Lorem Ipsum as it is still under development. ️
+
+## TODO's:
+
+-   Under 640px device media queries
+-   Download pdf C.V.
+-   Better SEO optimisation keywords for html and better performance
